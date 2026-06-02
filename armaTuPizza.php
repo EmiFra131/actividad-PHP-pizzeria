@@ -11,7 +11,18 @@
     <body>
         <nav class="navbar">
             <div class="nav-left">
-                <!-- Aquí va el PHP para la bandera -->
+                <?php
+                
+                $imgs = [
+                    "it" => "img/banderas/it.png",
+                    "fr" => "img/banderas/fr.png",
+                    "mx" => "img/banderas/mx.png",
+                    "ar" => "img/banderas/ar.png"
+                ];
+                $pais = $_GET["pais"];
+                echo "<img src=".$imgs[$pais]." class = 'flag-icon'>";
+                
+                ?>
                 <img src="img/banderas/mx.png" class="flag-icon">
                 <h1>PizzaPlaneta</h1>
             </div>

@@ -29,8 +29,26 @@
 
         <div class="resumen-pedido" style="background: #f8f9fa; padding: 20px; border-left: 5px solid #e63946; border-radius: 5px;">
             <h3>Resumen de tu Orden:</h3>
-            
-            <!-- Aquí va el PHP para mostrar los datos recibidos -->
+            <?php
+            $nombre = $_POST["nombre"];
+            $correo = $_POST["correo"];
+            $cantidad = $_POST["cantidad"];
+            $fecha = $_POST["fecha_entrega"];
+            $picante = $_POST["picante"];
+            $color_caja = $_POST["color_caja"];
+            $tamano = $_POST["tamano"];
+            $tipo_pizzas = $_POST["tipo_pizza"];
+            $extras = $_POST["instrucciones"];
+
+            echo "<p>".$nombre."</p>";
+            echo "<p>".$correo."</p>";
+            echo "<p>".$cantidad."</p>";
+            echo "<p>".$fecha."</p>";
+            echo "<p>".$picante."</p>";
+            echo "<p>".$color_caja."</p>";
+            echo "<p>".$tamano."</p>";
+            echo "<p>".$tipo_pizzas."</p>";
+            ?>
             
         </div>
         
